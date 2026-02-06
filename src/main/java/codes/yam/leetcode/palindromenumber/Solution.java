@@ -10,8 +10,8 @@ package codes.yam.leetcode.palindromenumber;
  */
 class Solution {
     /**
-     * <p>Checks if an integer is a palindrome by reversing only
-     * the second half of the digits and comparing with the first half.</p>
+     * Checks if an integer is a palindrome by reversing only the second half of the digits and comparing with the first
+     * half.
      *
      * @param x The integer to check.
      * @return true if x is a palindrome, false otherwise.
