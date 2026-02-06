@@ -1,7 +1,7 @@
 package codes.yam.leetcode.palindromenumber;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -9,15 +9,15 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class SolutionTest {
     private final Solution solution = new Solution();
 
-    @Test
-    @DisplayName("Check if 121 is a palindrome")
-    public void testPositiveCase() {
-        assertTrue(solution.isPalindrome(121), "121 should be palindrome");
+    @ParameterizedTest(name = "{0} is a palindrome")
+    @ValueSource(ints = {121, 0, 1, 7, 11, 33, 1221, 12321, 1234321})
+    void testPalindromes(int x) {
+        assertTrue(solution.isPalindrome(x));
     }
 
-    @Test
-    @DisplayName("Check if 221 is not a palindrome")
-    public void testNegativeCase() {
-        assertFalse(solution.isPalindrome(221), "221 should not be palindrome");
+    @ParameterizedTest(name = "{0} is not a palindrome")
+    @ValueSource(ints = {-121, -1, 10, 221, 123, 1000021})
+    void testNonPalindromes(int x) {
+        assertFalse(solution.isPalindrome(x));
     }
 }
