@@ -31,6 +31,6 @@ mvn javadoc:javadoc               # Generate Javadoc
 ## Tech Stack
 
 - **Java 21** (LTS)
-- **JUnit 5** for parameterized testing
+- **JUnit 6** for parameterized testing
 - **JMH** for benchmarking with GC profiling
 - **Maven** for builds
