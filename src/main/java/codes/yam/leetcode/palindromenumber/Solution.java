@@ -16,14 +16,22 @@ class Solution {
      * @return true if x is a palindrome, false otherwise.
      */
     public boolean isPalindrome(int x) {
-        if (x < 0) return false;
+        return isPalindromeNaive(x);
+    }
 
-        int reversed = 0;
-        int original = x;
-        while (x != 0) {
-            reversed = reversed * 10 + x % 10;
-            x /= 10;
+    /**
+     * The naive way of solving `isPalindrome` - by converting to string.
+     *
+     * @param x The integer to check.
+     * @return true if x is a palindrome, false otherwise.
+     */
+    private boolean isPalindromeNaive(int x) {
+        final String xAsString = String.valueOf(x);
+        for (int i = 0; i <= xAsString.length() / 2; i++) {
+            final char a = xAsString.charAt(i);
+            final char b = xAsString.charAt(xAsString.length() - 1 - i);
+            if (a != b) return false;
         }
-        return original == reversed;
+        return true;
     }
 }
