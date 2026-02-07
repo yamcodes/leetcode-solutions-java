@@ -3,6 +3,13 @@ package codes.yam.leetcode.twosum;
 import java.util.Arrays;
 import java.util.Comparator;
 
+/**
+ * <p>Solution for the <b>Two Sum</b> problem.</p>
+ * <ul>
+ * <li><b>Time Complexity:</b> <code>O(n log n)</code></li>
+ * <li><b>Space Complexity:</b> <code>O(n)</code></li>
+ * </ul>
+ */
 class Solution {
   int[][] buildNumsWithIndices(int[] nums) {
     int[][] res = new int[nums.length][2];

@@ -6,6 +6,7 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
 | # | Problem                                                               | Difficulty | Time              | Space  |
 |---|-----------------------------------------------------------------------|------------|-------------------|--------|
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/)                     | Easy       | `O(n log n)`       | `O(n)` |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy       | `O(log10(n) / 2)` | `O(1)` |
 
 ## Project Structure
