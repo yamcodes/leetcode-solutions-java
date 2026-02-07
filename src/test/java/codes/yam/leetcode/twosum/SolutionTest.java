@@ -3,6 +3,7 @@ package codes.yam.leetcode.twosum;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
+import java.util.Arrays;
 import java.util.stream.Stream;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -20,6 +21,9 @@ public class SolutionTest {
   @ParameterizedTest
   @MethodSource("cases")
   void twoSum(int[] nums, int target, int[] expected) {
-    assertArrayEquals(expected, new Solution().twoSum(nums, target));
+    int[] result = new Solution().twoSum(nums, target);
+    Arrays.sort(result);
+    Arrays.sort(expected);
+    assertArrayEquals(expected, result);
   }
 }
