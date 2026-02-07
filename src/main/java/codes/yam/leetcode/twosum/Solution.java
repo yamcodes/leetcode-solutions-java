@@ -20,6 +20,14 @@ class Solution {
     return res;
   }
 
+  /**
+   * Finds two indices in {@code nums} whose values sum to {@code target}.
+   *
+   * @param nums array of integers
+   * @param target the target sum
+   * @return an array of two indices
+   * @throws IllegalArgumentException if no solution exists
+   */
   int[] twoSum(int[] nums, int target) {
     int[][] numsWithIndices = buildNumsWithIndices(nums);
     Arrays.sort(numsWithIndices, Comparator.comparingInt(a -> a[0]));
