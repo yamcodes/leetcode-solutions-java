@@ -133,7 +133,7 @@ mvn test -Dtest=SolutionTest
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/yamcodes"><img src="https://avatars.githubusercontent.com/u/2014360?v=4?s=100" width="100px;" alt="Yam Borodetsky"/><br /><sub><b>Yam Borodetsky</b></sub></a><br /><a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Code">💻</a> <a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Documentation">📖</a> <a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Tests">⚠️</a></td>
+      <td style="text-align: center; vertical-align: top; width: 14.28%;"><a href="https://github.com/yamcodes"><img src="https://avatars.githubusercontent.com/u/2014360?v=4?s=100" width="100" alt="Yam Borodetsky"/><br/><sub><b>Yam Borodetsky</b></sub></a><br/><a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Code">💻</a> <a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Documentation">📖</a> <a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Tests">⚠️</a></td>
     </tr>
   </tbody>
 </table>
