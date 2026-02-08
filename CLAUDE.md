@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Build & Test Commands
 
-This is a Maven project using **Java 21 (LTS)**.
+This is a Maven project using **Java 25 (LTS)**.
 
 - **Build:** `mvn compile`
 - **Test all:** `mvn test`
