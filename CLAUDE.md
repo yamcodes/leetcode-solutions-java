@@ -55,4 +55,4 @@ package codes.yam.leetcode.problemslug;
 
 ## Dependencies
 
-- **JUnit Jupiter 5** for testing
+- **JUnit Jupiter 6** for testing
