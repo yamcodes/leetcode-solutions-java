@@ -1,12 +1,14 @@
 # LeetCode Solutions
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+
 My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
 ## Solutions
 
 | # | Problem                                                               | Difficulty | Time              | Space  |
 |---|-----------------------------------------------------------------------|------------|-------------------|--------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/)                     | Easy       | `O(n log n)`       | `O(n)` |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/)                     | Easy       | `O(n log n)`      | `O(n)` |
 | 9 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | Easy       | `O(log10(n) / 2)` | `O(1)` |
 
 ## Project Structure
@@ -122,3 +124,21 @@ mvn test -Dtest=SolutionTest
 - **JUnit 6** for parameterized testing
 - **JMH** for benchmarking with GC profiling
 - **Maven** for builds
+
+## Contributors
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/yamcodes"><img src="https://avatars.githubusercontent.com/u/2014360?v=4?s=100" width="100px;" alt="Yam Borodetsky"/><br /><sub><b>Yam Borodetsky</b></sub></a><br /><a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Code">💻</a> <a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Documentation">📖</a> <a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Tests">⚠️</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
