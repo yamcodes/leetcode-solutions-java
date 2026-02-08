@@ -120,7 +120,7 @@ mvn test -Dtest=SolutionTest
 
 ## Tech Stack
 
-- **Java 21** (LTS)
+- **Java 25** (LTS)
 - **JUnit 6** for parameterized testing
 - **JMH** for benchmarking with GC profiling
 - **Maven** for builds
