@@ -20,5 +20,12 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: Build with Maven
-      run: mvn -B test
+    - name: Build and test
+      run: mvn -B verify
+
+    - name: Generate Javadoc
+      run: mvn -B javadoc:javadoc
+
+    - name: Dependency review
+      uses: actions/dependency-review-action@v4
+      if: github.event_name == 'pull_request'
