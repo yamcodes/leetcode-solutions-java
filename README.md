@@ -134,7 +134,7 @@ mvn test -Dtest=SolutionTest
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/yamcodes"><img src="https://avatars.githubusercontent.com/u/2014360?v=4?s=100" width="100px;" alt="Yam Borodetsky"/><br /><sub><b>Yam Borodetsky</b></sub></a><br /><a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Code">💻</a> <a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Documentation">📖</a> <a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=yamcodes" title="Tests">⚠️</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/HoudaBelhad"><img src="https://avatars.githubusercontent.com/u/115419309?v=4?s=100" width="100px;" alt="Houda Belhad"/><br /><sub><b>Houda Belhad</b></sub></a><br /><a href="https://github.com/yamcodes/leetcode-solutions-java/commits?author=HoudaBelhad" title="Tests">⚠️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/HoudaBelhad"><img src="https://avatars.githubusercontent.com/u/115419309?v=4?s=100" width="100px;" alt="Houda Belhad"/><br /><sub><b>Houda Belhad</b></sub></a><br /><a href="#infra-HoudaBelhad" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     </tr>
   </tbody>
 </table>
