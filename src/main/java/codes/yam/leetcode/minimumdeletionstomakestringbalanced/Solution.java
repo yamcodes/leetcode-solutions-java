@@ -3,7 +3,7 @@ package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
 
 class Solution {
   /**
-   * Counts the number of B's before and A's after the given index.
+   * Counts misplaced characters around the given split point.
    *
    * @param s     the string
    * @param index the split point index

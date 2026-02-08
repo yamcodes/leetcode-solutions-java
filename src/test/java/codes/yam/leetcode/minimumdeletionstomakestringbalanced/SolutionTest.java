@@ -16,9 +16,9 @@ public class SolutionTest {
             arguments("bbaaaaabb", 2),
             arguments("b", 0),
             arguments("ba", 1),
-            arguments("aabbbaa", 3),
+            arguments("aabbbaa", 2),
             arguments("abababab", 3),
-            arguments("bbbbaaaa", 0));
+            arguments("bbbbaaaa", 4));
   }
 
   @ParameterizedTest
