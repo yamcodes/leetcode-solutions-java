@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![CI](https://github.com/yamcodes/leetcode-solutions-java/actions/workflows/ci.yml/badge.svg)
 ![Java](https://img.shields.io/badge/java-21-blue)
 ![LeetCode](https://img.shields.io/badge/LeetCode-Solutions-orange)
 
