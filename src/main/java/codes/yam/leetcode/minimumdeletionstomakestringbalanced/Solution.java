@@ -1,10 +1,11 @@
 package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
 
 /**
- * <p>Solution for the <b>Minimum Deletions to Make String Balanced</b> problem.</p>
+ * Solution for the <b>Minimum Deletions to Make String Balanced</b> problem.
+ *
  * <ul>
- * <li><b>Time Complexity:</b> <code>O(n)</code></li>
- * <li><b>Space Complexity:</b> <code>O(n)</code></li>
+ *   <li><b>Time Complexity:</b> <code>O(n)</code>
+ *   <li><b>Space Complexity:</b> <code>O(n)</code>
  * </ul>
  */
 class Solution {
@@ -51,8 +52,9 @@ class Solution {
    */
   @SuppressWarnings("unused")
   int minimumDeletionsNaive(String s) {
-    int min = Integer.MAX_VALUE;
-    for (int i = 0; i < s.length(); i++) {
+    int n = s.length();
+    int min = n; // we never need more than n deletions
+    for (int i = 0; i < n; i++) {
       int[] info = getSliceInfo(s, i);
       int computed = info[0] + info[1];
       min = Math.min(min, computed);
