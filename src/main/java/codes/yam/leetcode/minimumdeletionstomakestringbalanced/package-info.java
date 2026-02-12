@@ -9,10 +9,10 @@
  * <p><b>Solution progression:</b>
  *
  * <ol>
- *   <li>{@link NaiveSolution} — Brute force, <code>O(n²)</code> time, <code>O(1)</code> space
- *   <li>{@link PrefixSuffixSolution} — Prefix/suffix arrays, <code>O(n)</code> time, <code>O(n)
+ *   <li>{@code NaiveSolution} — Brute force, <code>O(n²)</code> time, <code>O(1)</code> space
+ *   <li>{@code PrefixSuffixSolution} — Prefix/suffix arrays, <code>O(n)</code> time, <code>O(n)
  *       </code> space
- *   <li>{@link Solution} — Single-pass DP, <code>O(n)</code> time, <code>O(1)</code> space
+ *   <li>{@code Solution} — Single-pass DP, <code>O(n)</code> time, <code>O(1)</code> space
  * </ol>
  *
  * @see <a href="https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/">Problem
