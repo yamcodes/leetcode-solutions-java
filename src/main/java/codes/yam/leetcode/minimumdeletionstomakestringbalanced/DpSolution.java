@@ -1,16 +1,16 @@
 package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
 
 /**
- * Solution for the <b>Minimum Deletions to Make String Balanced</b> problem.
+ * Bottom-up DP solution for the <b>Minimum Deletions to Make String Balanced</b> problem.
  *
- * <p>Optimizes {@code DpSolution} by collapsing the DP table into constant space.
+ * <p>Flips the memoized recursion into an iterative DP table.
  *
  * <ul>
  *   <li><b>Time Complexity:</b> <code>O(n)</code>
- *   <li><b>Space Complexity:</b> <code>O(1)</code>
+ *   <li><b>Space Complexity:</b> <code>O(n)</code>
  * </ul>
  */
-class Solution {
+class DpSolution {
   /**
    * Returns the minimum number of deletions to make {@code s} balanced.
    *
@@ -18,7 +18,7 @@ class Solution {
    * @return the minimum number of deletions needed
    */
   int minimumDeletions(String s) {
-    // TODO: Implement space-optimized DP solution
+    // TODO: Implement bottom-up DP solution
     throw new UnsupportedOperationException("Not yet implemented");
   }
 }

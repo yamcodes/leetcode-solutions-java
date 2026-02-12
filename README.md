@@ -16,10 +16,11 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
 ```
 src/main/java/codes/yam/leetcode/{problem-slug}/
-  Solution.java            # Optimal solution
-  NaiveSolution.java       # Brute-force approach (optional)
-  PrefixSuffixSolution.java # Intermediate approach (optional)
-  package-info.java        # Problem metadata & solution progression
+  Solution.java          # Optimal solution
+  RecursiveSolution.java # Brute-force recursion (optional)
+  MemoizedSolution.java  # Memoized recursion (optional)
+  DpSolution.java        # Bottom-up DP (optional)
+  package-info.java      # Problem metadata & solution progression
 
 src/test/java/codes/yam/leetcode/{problem-slug}/
   SolutionTest.java       # Unit tests
