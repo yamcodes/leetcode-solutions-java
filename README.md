@@ -16,13 +16,18 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
 ```
 src/main/java/codes/yam/leetcode/{problem-slug}/
-  Solution.java       # Solution implementation
-  package-info.java   # Problem metadata
+  Solution.java            # Optimal solution
+  NaiveSolution.java       # Brute-force approach (optional)
+  PrefixSuffixSolution.java # Intermediate approach (optional)
+  package-info.java        # Problem metadata & solution progression
 
 src/test/java/codes/yam/leetcode/{problem-slug}/
   SolutionTest.java       # Unit tests
   SolutionBenchmark.java  # JMH benchmarks
 ```
+
+When a problem has multiple solution approaches, each gets its own class. `Solution.java` is always the optimal/final
+version. The progression is documented in `package-info.java` and all solutions share the same test cases.
 
 ## Commands
 
