@@ -22,6 +22,18 @@ public class SolutionTest {
 
   @ParameterizedTest
   @MethodSource("cases")
+  void naiveSolution(String s, int expected) {
+    assertEquals(expected, new NaiveSolution().minimumDeletions(s));
+  }
+
+  @ParameterizedTest
+  @MethodSource("cases")
+  void prefixSuffixSolution(String s, int expected) {
+    assertEquals(expected, new PrefixSuffixSolution().minimumDeletions(s));
+  }
+
+  @ParameterizedTest
+  @MethodSource("cases")
   void recursiveSolution(String s, int expected) {
     assertEquals(expected, new RecursiveSolution().minimumDeletions(s));
   }

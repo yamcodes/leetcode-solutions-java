@@ -6,7 +6,16 @@
  *   <li><b>Difficulty:</b> Medium
  * </ul>
  *
- * <p><b>Solution progression:</b>
+ * <p><b>Solution progression (split-point approach):</b>
+ *
+ * <ol>
+ *   <li>{@code NaiveSolution} — Brute force split-point, <code>O(n²)</code> time, <code>O(1)</code>
+ *       space
+ *   <li>{@code PrefixSuffixSolution} — Prefix/suffix arrays, <code>O(n)</code> time, <code>O(n)
+ *       </code> space
+ * </ol>
+ *
+ * <p><b>Solution progression (DP approach):</b>
  *
  * <ol>
  *   <li>{@code RecursiveSolution} — Brute force recursion, <code>O(2^n)</code> time, <code>O(n)
