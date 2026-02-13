@@ -16,19 +16,21 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
 ```
 src/main/java/codes/yam/leetcode/{problem-slug}/
-  Solution.java          # Optimal solution
-  RecursiveSolution.java # Brute-force recursion (optional)
-  MemoizedSolution.java  # Memoized recursion (optional)
-  DpSolution.java        # Bottom-up DP (optional)
-  package-info.java      # Problem metadata & solution progression
+  Solution.java              # Optimal/final solution
+  SolutionNaive.java         # Additional solutions (prefix naming: Solution*.java)
+  SolutionDp.java
+  package-info.java          # Problem metadata & solution progression
 
 src/test/java/codes/yam/leetcode/{problem-slug}/
-  SolutionTest.java       # Unit tests
-  SolutionBenchmark.java  # JMH benchmarks
+  TestCases.java             # Shared test data (static Stream<Arguments> cases())
+  SolutionTest.java          # Tests Solution.java
+  SolutionNaiveTest.java     # One test file per solution
+  SolutionBenchmark.java     # JMH benchmarks (optional)
 ```
 
-When a problem has multiple solution approaches, each gets its own class. `Solution.java` is always the optimal/final
-version. The progression is documented in `package-info.java` and all solutions share the same test cases.
+When a problem has multiple solution approaches, each gets its own `Solution*.java` class. `Solution.java` is always the
+optimal/final version. The progression is documented in `package-info.java`. Test data lives in a shared `TestCases.java`,
+and each solution has its own test file using `@MethodSource` to reference it.
 
 ## Commands
 
