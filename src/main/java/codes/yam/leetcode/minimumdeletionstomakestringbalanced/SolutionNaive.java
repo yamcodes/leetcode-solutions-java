@@ -10,7 +10,7 @@ package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
  *   <li><b>Space Complexity:</b> <code>O(1)</code>
  * </ul>
  */
-class NaiveSolution {
+class SolutionNaive {
   /**
    * Counts misplaced characters around the given split point in {@code s}.
    *

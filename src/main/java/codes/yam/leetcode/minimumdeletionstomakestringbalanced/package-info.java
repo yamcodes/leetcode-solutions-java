@@ -9,20 +9,20 @@
  * <p><b>Solution progression (split-point approach):</b>
  *
  * <ol>
- *   <li>{@code NaiveSolution} — Brute force split-point, <code>O(n²)</code> time, <code>O(1)</code>
+ *   <li>{@code SolutionNaive} — Brute force split-point, <code>O(n²)</code> time, <code>O(1)</code>
  *       space
- *   <li>{@code PrefixSuffixSolution} — Prefix/suffix arrays, <code>O(n)</code> time, <code>O(n)
+ *   <li>{@code SolutionPrefixSuffix} — Prefix/suffix arrays, <code>O(n)</code> time, <code>O(n)
  *       </code> space
  * </ol>
  *
  * <p><b>Solution progression (DP approach):</b>
  *
  * <ol>
- *   <li>{@code RecursiveSolution} — Brute force recursion, <code>O(2^n)</code> time, <code>O(n)
+ *   <li>{@code SolutionRecursive} — Brute force recursion, <code>O(2^n)</code> time, <code>O(n)
  *       </code> space
- *   <li>{@code MemoizedSolution} — Memoized recursion, <code>O(n²)</code> time, <code>O(n²)</code>
+ *   <li>{@code SolutionMemoized} — Memoized recursion, <code>O(n²)</code> time, <code>O(n²)</code>
  *       space
- *   <li>{@code DpSolution} — Bottom-up DP, <code>O(n)</code> time, <code>O(n)</code> space
+ *   <li>{@code SolutionDp} — Bottom-up DP, <code>O(n)</code> time, <code>O(n)</code> space
  *   <li>{@code Solution} — Space-optimized DP, <code>O(n)</code> time, <code>O(1)</code> space
  * </ol>
  *

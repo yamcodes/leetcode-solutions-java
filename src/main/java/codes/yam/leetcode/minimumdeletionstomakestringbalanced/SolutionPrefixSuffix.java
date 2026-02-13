@@ -11,7 +11,7 @@ package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
  *   <li><b>Space Complexity:</b> <code>O(n)</code>
  * </ul>
  */
-class PrefixSuffixSolution {
+class SolutionPrefixSuffix {
   /**
    * Returns the minimum number of deletions to make {@code s} balanced.
    *
