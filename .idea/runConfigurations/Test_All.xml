@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Test" type="JUnit" factoryName="JUnit">
+  <configuration default="false" name="Test All" type="JUnit" factoryName="JUnit">
     <module name="leetcode-solutions" />
     <target name="WSL" />
     <extension name="coverage">
