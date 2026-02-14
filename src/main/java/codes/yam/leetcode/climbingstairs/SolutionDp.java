@@ -10,8 +10,8 @@ package codes.yam.leetcode.climbingstairs;
  */
 class SolutionDp {
   int climbStairs(int n) {
+    if (n <= 2) return n;
     int[] dp = new int[n + 1];
-    // ignore dp[0]
     dp[1] = 1;
     dp[2] = 2;
     for (int i = 3; i <= n; i++) {
