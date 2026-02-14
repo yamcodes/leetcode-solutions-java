@@ -1,6 +1,6 @@
 # LeetCode Solutions
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors)
+[![All Contributors](https://img.shields.io/github/all-contributors/yamcodes/leetcode-solutions-java?color=ee8449)](#contributors)
 
 My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
