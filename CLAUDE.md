@@ -35,9 +35,14 @@ src/test/java/codes/yam/leetcode/{problemslug}/
 
 Each test file uses `@MethodSource("fully.qualified.TestCases#cases")` to share test data.
 
+**When to use `@ValueSource` vs `@MethodSource`:** Use `@ValueSource` for single-argument problems with groupable
+outcomes (e.g., boolean results — group inputs by true/false). Use `@MethodSource` with `TestCases` when each input has
+a distinct expected output (e.g., `climbStairs(3) → 3`).
+
 ## Code Conventions
 
-**Solution classes** are package-scoped (not `public`), use prefix naming (`Solution`, `SolutionNaive`, `SolutionDp`, etc.), and use HTML-formatted Javadoc:
+**Solution classes** are package-scoped (not `public`), use prefix naming (`Solution`, `SolutionNaive`, `SolutionDp`,
+etc.), and use HTML-formatted Javadoc:
 
 ```java
 /**

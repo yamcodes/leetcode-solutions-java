@@ -10,6 +10,7 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 |------|-----------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|
 | 1    | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                     | Easy       | `O(n log n)`      | `O(n)` |
 | 9    | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                 | Easy       | `O(log10(n) / 2)` | `O(1)` |
+| 70   | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                     | Easy       | `O(n)`            | `O(1)` |
 | 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | Medium     | `O(n)`            | `O(1)` |
 
 ## Project Structure
@@ -29,7 +30,8 @@ src/test/java/codes/yam/leetcode/{problem-slug}/
 ```
 
 When a problem has multiple solution approaches, each gets its own `Solution*.java` class. `Solution.java` is always the
-optimal/final version. The progression is documented in `package-info.java`. Test data lives in a shared `TestCases.java`,
+optimal/final version. The progression is documented in `package-info.java`. Test data lives in a shared
+`TestCases.java`,
 and each solution has its own test file using `@MethodSource` to reference it.
 
 ## Commands
@@ -51,7 +53,8 @@ Right-click `src/test/java/codes/yam/leetcode/` → **New → Package** → `pro
 
 Start with LeetCode's example cases plus a few edge cases (aim for 3–5 per behavior):
 
-**For single-arg problems** — use `@ValueSource`, grouped by expected outcome:
+**For single-argument problems with groupable outcomes** (e.g., boolean results — group inputs by true/false) — use
+`@ValueSource`:
 
 ```java
 class SolutionTest {
@@ -71,7 +74,7 @@ class SolutionTest {
 }
 ```
 
-**For multi-arg problems** — use `@MethodSource`:
+**When each input has a distinct expected output** (e.g., `climbStairs(3) → 3`) — use `@MethodSource` with `TestCases`:
 
 ```java
 class SolutionTest {
