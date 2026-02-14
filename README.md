@@ -1,4 +1,4 @@
-# LeetCode Solutions
+# LeetCode Solutions in Java
 
 [![All Contributors](https://img.shields.io/github/all-contributors/yamcodes/leetcode-solutions-java?color=ee8449)](#contributors)
 
