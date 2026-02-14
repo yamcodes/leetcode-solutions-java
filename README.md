@@ -29,7 +29,8 @@ src/test/java/codes/yam/leetcode/{problem-slug}/
 ```
 
 When a problem has multiple solution approaches, each gets its own `Solution*.java` class. `Solution.java` is always the
-optimal/final version. The progression is documented in `package-info.java`. Test data lives in a shared `TestCases.java`,
+optimal/final version. The progression is documented in `package-info.java`. Test data lives in a shared
+`TestCases.java`,
 and each solution has its own test file using `@MethodSource` to reference it.
 
 ## Commands
@@ -51,7 +52,8 @@ Right-click `src/test/java/codes/yam/leetcode/` → **New → Package** → `pro
 
 Start with LeetCode's example cases plus a few edge cases (aim for 3–5 per behavior):
 
-**For single-arg problems** — use `@ValueSource`, grouped by expected outcome:
+**For single-argument problems with groupable outcomes** (e.g., boolean results — group inputs by true/false) — use
+`@ValueSource`:
 
 ```java
 class SolutionTest {
@@ -71,7 +73,7 @@ class SolutionTest {
 }
 ```
 
-**For multi-arg problems** — use `@MethodSource`:
+**When each input has a distinct expected output** (e.g., `climbStairs(3) → 3`) — use `@MethodSource` with `TestCases`:
 
 ```java
 class SolutionTest {
