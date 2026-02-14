@@ -18,10 +18,15 @@ class Solution {
    * @return the minimum number of deletions needed
    */
   int minimumDeletions(String s) {
-    int aAfter = 0, bBefore = 0, bCount = 0;
+    int aAfter = 0;
+    int bBefore = 0;
+    int bCount = 0;
     for (int i = 0; i < s.length(); i++) {
-      if (s.charAt(i) == 'b') bCount++;
-      else aAfter++;
+      if (s.charAt(i) == 'b') {
+        bCount++;
+      } else {
+        aAfter++;
+      }
       if (aAfter + bBefore > bCount) {
         bBefore = bCount;
         aAfter = 0;
