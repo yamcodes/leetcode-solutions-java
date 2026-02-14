@@ -6,12 +6,17 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
 ## Solutions
 
-| #    | Problem                                                                                                               | Difficulty | Time              | Space  |
-|------|-----------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|
-| 1    | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                     | Easy       | `O(n log n)`      | `O(n)` |
-| 9    | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                 | Easy       | `O(log10(n) / 2)` | `O(1)` |
-| 70   | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                     | Easy       | `O(n)`            | `O(1)` |
-| 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | Medium     | `O(n)`            | `O(1)` |
+| #    | Problem                                                                                                                          | Difficulty | Time              | Space  |
+|------|----------------------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|
+| 1    | [Two Sum](src/main/java/codes/yam/leetcode/twosum/Solution.java) [(LC)][lc-1]                                                   | Easy       | `O(n log n)`      | `O(n)` |
+| 9    | [Palindrome Number](src/main/java/codes/yam/leetcode/palindromenumber/Solution.java) [(LC)][lc-9]                                | Easy       | `O(log10(n) / 2)` | `O(1)` |
+| 70   | [Climbing Stairs](src/main/java/codes/yam/leetcode/climbingstairs/Solution.java) [(LC)][lc-70]                                   | Easy       | `O(n)`            | `O(1)` |
+| 1653 | [Minimum Deletions to Make String Balanced](src/main/java/codes/yam/leetcode/minimumdeletionstomakestringbalanced/Solution.java) [(LC)][lc-1653] | Medium     | `O(n)`            | `O(1)` |
+
+[lc-1]: https://leetcode.com/problems/two-sum/
+[lc-9]: https://leetcode.com/problems/palindrome-number/
+[lc-70]: https://leetcode.com/problems/climbing-stairs/
+[lc-1653]: https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/
 
 ## Project Structure
 
