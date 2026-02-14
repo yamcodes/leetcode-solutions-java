@@ -1,10 +1,36 @@
 /**
- * <p>Solutions for the "Minimum Deletions to Make String Balanced" problem on LeetCode.</p>
+ * Solutions for the "Minimum Deletions to Make String Balanced" problem on LeetCode.
+ *
  * <ul>
- * <li><b>Slug:</b> <code>minimum-deletions-to-make-string-balanced</code></li>
- * <li><b>Difficulty:</b> Medium</li>
+ *   <li><b>Slug:</b> <code>minimum-deletions-to-make-string-balanced</code>
+ *   <li><b>Difficulty:</b> Medium
  * </ul>
  *
- * @see <a href="https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/">Problem Link</a>
+ * <p><b>Solution progression (split-point approach):</b>
+ *
+ * <ol>
+ *   <li>{@code SolutionNaive} — Brute force split-point, <code>O(n²)</code> time, <code>O(1)</code>
+ *       space
+ *   <li>{@code SolutionPrefixSuffix} — Prefix/suffix arrays, <code>O(n)</code> time, <code>O(n)
+ *       </code> space
+ * </ol>
+ *
+ * <p><b>Solution progression (DP approach):</b>
+ *
+ * <ol>
+ *   <li>{@code SolutionRecursive} — Brute force recursion, <code>O(2^n)</code> time, <code>O(n)
+ *       </code> space
+ *   <li>{@code SolutionMemoized} — Memoized recursion, <code>O(n²)</code> time, <code>O(n²)</code>
+ *       space
+ *   <li>{@code SolutionDp} — Bottom-up DP, <code>O(n)</code> time, <code>O(n)</code> space
+ *   <li>{@code Solution} — Space-optimized DP, <code>O(n)</code> time, <code>O(1)</code> space
+ * </ol>
+ *
+ * <p><b>TODO:</b> Current {@code Solution} uses a split-point approach. Once the DP progression is
+ * implemented, replace it with the cleaner DP formulation (rename current to {@code
+ * SolutionSplitPoint}).
+ *
+ * @see <a href="https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/">Problem
+ *     Link</a>
  */
 package codes.yam.leetcode.minimumdeletionstomakestringbalanced;

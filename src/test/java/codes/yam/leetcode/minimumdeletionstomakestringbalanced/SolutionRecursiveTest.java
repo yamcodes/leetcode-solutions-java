@@ -2,13 +2,15 @@ package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class SolutionTest {
+@Disabled("Not yet implemented")
+class SolutionRecursiveTest {
   @ParameterizedTest
   @MethodSource("codes.yam.leetcode.minimumdeletionstomakestringbalanced.TestCases#cases")
   void minimumDeletions(String s, int expected) {
-    assertEquals(expected, new Solution().minimumDeletions(s));
+    assertEquals(expected, new SolutionRecursive().minimumDeletions(s));
   }
 }

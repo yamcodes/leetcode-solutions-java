@@ -10,19 +10,27 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 |------|-----------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|
 | 1    | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                     | Easy       | `O(n log n)`      | `O(n)` |
 | 9    | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                 | Easy       | `O(log10(n) / 2)` | `O(1)` |
-| 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | Medium     | `O(n)`            | `O(n)` |
+| 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | Medium     | `O(n)`            | `O(1)` |
 
 ## Project Structure
 
 ```
 src/main/java/codes/yam/leetcode/{problem-slug}/
-  Solution.java       # Solution implementation
-  package-info.java   # Problem metadata
+  Solution.java              # Optimal/final solution
+  SolutionNaive.java         # Additional solutions (prefix naming: Solution*.java)
+  SolutionDp.java
+  package-info.java          # Problem metadata & solution progression
 
 src/test/java/codes/yam/leetcode/{problem-slug}/
-  SolutionTest.java       # Unit tests
-  SolutionBenchmark.java  # JMH benchmarks
+  TestCases.java             # Shared test data (static Stream<Arguments> cases())
+  SolutionTest.java          # Tests Solution.java
+  SolutionNaiveTest.java     # One test file per solution
+  SolutionBenchmark.java     # JMH benchmarks (optional)
 ```
+
+When a problem has multiple solution approaches, each gets its own `Solution*.java` class. `Solution.java` is always the
+optimal/final version. The progression is documented in `package-info.java`. Test data lives in a shared `TestCases.java`,
+and each solution has its own test file using `@MethodSource` to reference it.
 
 ## Commands
 

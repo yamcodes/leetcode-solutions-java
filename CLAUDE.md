@@ -17,15 +17,27 @@ Each LeetCode problem lives in its own package under `codes.yam.leetcode`:
 
 ```
 src/main/java/codes/yam/leetcode/{problemslug}/
-├── Solution.java       # The solution implementation
-└── package-info.java   # Problem metadata (slug, difficulty, link)
+├── Solution.java           # The final/optimal solution
+├── SolutionNaive.java      # Additional solutions (prefix naming: Solution*.java)
+├── SolutionDp.java
+└── package-info.java       # Problem metadata + solution progression
 ```
 
-Tests go under `src/test/java/codes/yam/leetcode/{problemslug}/`.
+Tests go under `src/test/java/codes/yam/leetcode/{problemslug}/`:
+
+```
+src/test/java/codes/yam/leetcode/{problemslug}/
+├── TestCases.java          # Shared test data (static Stream<Arguments> cases())
+├── SolutionTest.java       # Tests Solution.java
+├── SolutionNaiveTest.java  # Tests SolutionNaive.java (one test file per solution)
+└── SolutionDpTest.java
+```
+
+Each test file uses `@MethodSource("fully.qualified.TestCases#cases")` to share test data.
 
 ## Code Conventions
 
-**Solution classes** are package-scoped (not `public`), named `Solution`, and use HTML-formatted Javadoc:
+**Solution classes** are package-scoped (not `public`), use prefix naming (`Solution`, `SolutionNaive`, `SolutionDp`, etc.), and use HTML-formatted Javadoc:
 
 ```java
 /**
@@ -35,7 +47,9 @@ Tests go under `src/test/java/codes/yam/leetcode/{problemslug}/`.
  * <li><b>Space Complexity:</b> <code>O(...)</code></li>
  * </ul>
  */
-class Solution { ... }
+class Solution {
+    // ...
+}
 ```
 
 **package-info.java** documents problem metadata with the same HTML style:
