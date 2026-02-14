@@ -7,10 +7,10 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 @Disabled("Not yet implemented")
-class SolutionTest {
+class SolutionMemoizedTest {
   @ParameterizedTest
   @MethodSource("codes.yam.leetcode.climbingstairs.TestCases#cases")
   void climbStairs(int n, int expected) {
-    assertEquals(expected, new Solution().climbStairs(n));
+    assertEquals(expected, new SolutionMemoized().climbStairs(n));
   }
 }
