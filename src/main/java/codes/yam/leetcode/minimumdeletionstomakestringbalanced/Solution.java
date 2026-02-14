@@ -17,19 +17,16 @@ class Solution {
    * @param s the string of {@code 'a'} and {@code 'b'} characters
    * @return the minimum number of deletions needed
    */
-  @SuppressWarnings("unused")
   int minimumDeletions(String s) {
-    int n = s.length();
-    int aAfter = 0, j = 0, bBefore = 0, bBeforeRun = 0;
-    for (int i = 0; i < n; i++) {
-      char letter = s.charAt(i);
-      if (letter == 'a') aAfter++;
-      else bBeforeRun++;
-      if (aAfter + bBefore > bBeforeRun) {
-        bBefore = bBeforeRun;
+    int aAfter = 0, bBefore = 0, bCount = 0;
+    for (int i = 0; i < s.length(); i++) {
+      if (s.charAt(i) == 'b') bCount++;
+      else aAfter++;
+      if (aAfter + bBefore > bCount) {
+        bBefore = bCount;
         aAfter = 0;
       }
     }
-    return Math.min(bBeforeRun, aAfter + bBefore);
+    return Math.min(bCount, aAfter + bBefore);
   }
 }
