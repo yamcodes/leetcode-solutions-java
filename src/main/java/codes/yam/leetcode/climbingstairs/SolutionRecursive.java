@@ -10,6 +10,8 @@ package codes.yam.leetcode.climbingstairs;
  */
 class SolutionRecursive {
   int climbStairs(int n) {
-    throw new UnsupportedOperationException("Not yet implemented");
+    if (n == 1) return 1;
+    if (n == 2) return 2;
+    return climbStairs(n - 1) + climbStairs(n - 2);
   }
 }
