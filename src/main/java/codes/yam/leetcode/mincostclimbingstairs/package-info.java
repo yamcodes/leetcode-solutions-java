@@ -9,10 +9,6 @@
  * <p><b>Solution progression:</b>
  *
  * <ol>
- *   <li>{@code SolutionRecursive} — Brute force recursion, <code>O(2^n)</code> time, <code>O(n)
- *       </code> space
- *   <li>{@code SolutionMemoized} — Memoized recursion, <code>O(n)</code> time, <code>O(n)</code>
- *       space
  *   <li>{@code SolutionDp} — Bottom-up DP, <code>O(n)</code> time, <code>O(n)</code> space
  *   <li>{@code Solution} — Space-optimized DP, <code>O(n)</code> time, <code>O(1)</code> space
  * </ol>
