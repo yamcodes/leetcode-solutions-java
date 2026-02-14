@@ -19,7 +19,17 @@ class Solution {
    */
   @SuppressWarnings("unused")
   int minimumDeletions(String s) {
-    // TODO: Implement space-optimized DP solution
-    throw new UnsupportedOperationException("Not yet implemented");
+    int n = s.length();
+    int aAfter = 0, j = 0, bBefore = 0, bBeforeRun = 0;
+    for (int i = 0; i < n; i++) {
+      char letter = s.charAt(i);
+      if (letter == 'a') aAfter++;
+      else bBeforeRun++;
+      if (aAfter + bBefore > bBeforeRun) {
+        bBefore = bBeforeRun;
+        aAfter = 0;
+      }
+    }
+    return Math.min(bBeforeRun, aAfter + bBefore);
   }
 }
