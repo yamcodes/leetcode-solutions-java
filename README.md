@@ -6,12 +6,25 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
 ## Solutions
 
-| #    | Problem                                                                                                               | Difficulty | Time              | Space  |
-|------|-----------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|
-| 1    | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                     | Easy       | `O(n log n)`      | `O(n)` |
-| 9    | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                 | Easy       | `O(log10(n) / 2)` | `O(1)` |
-| 70   | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)                                                     | Easy       | `O(n)`            | `O(1)` |
-| 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | Medium     | `O(n)`            | `O(1)` |
+| #*              | Problem                                                                                                                          | Difficulty | Time              | Space  |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|
+| [1][lc-1]       | [Two Sum](src/main/java/codes/yam/leetcode/twosum/Solution.java)                                                                 | Easy       | `O(n log n)`      | `O(n)` |
+| [9][lc-9]       | [Palindrome Number](src/main/java/codes/yam/leetcode/palindromenumber/Solution.java)                                             | Easy       | `O(log10(n) / 2)` | `O(1)` |
+| [70][lc-70]     | [Climbing Stairs](src/main/java/codes/yam/leetcode/climbingstairs/Solution.java)                                                 | Easy       | `O(n)`            | `O(1)` |
+| [746][lc-746]   | [Min Cost Climbing Stairs](src/main/java/codes/yam/leetcode/mincostclimbingstairs/Solution.java)                                 | Easy       | `O(n)`            | `O(1)` |
+| [1653][lc-1653] | [Minimum Deletions to Make String Balanced](src/main/java/codes/yam/leetcode/minimumdeletionstomakestringbalanced/Solution.java) | Medium     | `O(n)`            | `O(1)` |
+
+<sup>*Problem numbers link to LeetCode; problem names link to solution source.</sup>
+
+[lc-1]: https://leetcode.com/problems/two-sum/
+
+[lc-9]: https://leetcode.com/problems/palindrome-number/
+
+[lc-70]: https://leetcode.com/problems/climbing-stairs/
+
+[lc-746]: https://leetcode.com/problems/min-cost-climbing-stairs/
+
+[lc-1653]: https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/
 
 ## Project Structure
 
