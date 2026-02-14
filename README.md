@@ -10,7 +10,7 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 |------|-----------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|
 | 1    | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                     | Easy       | `O(n log n)`      | `O(n)` |
 | 9    | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                 | Easy       | `O(log10(n) / 2)` | `O(1)` |
-| 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | Medium     | `O(n)`            | `O(n)` |
+| 1653 | [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | Medium     | `O(n)`            | `O(1)` |
 
 ## Project Structure
 

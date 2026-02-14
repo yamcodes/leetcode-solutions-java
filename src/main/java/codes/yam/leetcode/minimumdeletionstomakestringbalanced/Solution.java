@@ -3,7 +3,7 @@ package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
 /**
  * Solution for the <b>Minimum Deletions to Make String Balanced</b> problem.
  *
- * <p>Optimizes {@code SolutionDp} by collapsing the DP table into constant space.
+ * <p>Uses a split-point counting approach to compute minimum deletions in constant space.
  *
  * <ul>
  *   <li><b>Time Complexity:</b> <code>O(n)</code>
