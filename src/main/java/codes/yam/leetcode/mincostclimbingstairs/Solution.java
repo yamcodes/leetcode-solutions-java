@@ -12,13 +12,13 @@ package codes.yam.leetcode.mincostclimbingstairs;
  */
 class Solution {
   int minCostClimbingStairs(int[] cost) {
-    int n = cost.length;
-    int[] dp = new int[n + 1];
-    dp[0] = 0;
-    dp[1] = 0;
-    for (int i = 2; i <= n; i++) {
-      dp[i] = Math.min(dp[i - 2] + cost[i - 2], dp[i - 1] + cost[i - 1]);
+    int a = 0;
+    int b = 0;
+    for (int i = 2; i <= cost.length; i++) {
+      int c = Math.min(a + cost[i - 2], b + cost[i - 1]);
+      a = b;
+      b = c;
     }
-    return dp[n];
+    return b;
   }
 }
