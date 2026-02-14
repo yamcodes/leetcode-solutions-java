@@ -26,9 +26,9 @@
  *   <li>{@code Solution} — Space-optimized DP, <code>O(n)</code> time, <code>O(1)</code> space
  * </ol>
  *
- * <p><b>TODO:</b> Current {@code Solution} uses a split-point-derived approach. Once the DP
- * progression is implemented, replace it with the cleaner DP formulation (rename current to {@code
- * SolutionSplitPointOptimized}).
+ * <p><b>TODO:</b> Current {@code Solution} uses a split-point approach. Once the DP progression is
+ * implemented, replace it with the cleaner DP formulation (rename current to {@code
+ * SolutionSplitPoint}).
  *
  * @see <a href="https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/">Problem
  *     Link</a>
