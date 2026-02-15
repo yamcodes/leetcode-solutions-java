@@ -15,20 +15,19 @@
  *       </code> space
  * </ol>
  *
+ * <p><b>Solution progression (split-point, optimized):</b>
+ *
+ * <ol start="3">
+ *   <li>{@code SolutionSplitPoint} — Split-point counting, <code>O(n)</code> time, <code>O(1)
+ *       </code> space
+ * </ol>
+ *
  * <p><b>Solution progression (DP approach):</b>
  *
  * <ol>
- *   <li>{@code SolutionRecursive} — Brute force recursion, <code>O(2^n)</code> time, <code>O(n)
- *       </code> space
- *   <li>{@code SolutionMemoized} — Memoized recursion, <code>O(n²)</code> time, <code>O(n²)</code>
- *       space
  *   <li>{@code SolutionDp} — Bottom-up DP, <code>O(n)</code> time, <code>O(n)</code> space
  *   <li>{@code Solution} — Space-optimized DP, <code>O(n)</code> time, <code>O(1)</code> space
  * </ol>
- *
- * <p><b>TODO:</b> Current {@code Solution} uses a split-point approach. Once the DP progression is
- * implemented, replace it with the cleaner DP formulation (rename current to {@code
- * SolutionSplitPoint}).
  *
  * @see <a href="https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/">Problem
  *     Link</a>

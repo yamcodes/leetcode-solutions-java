@@ -1,7 +1,26 @@
 package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
 
-public class Solution {
-  public int minimumDeletions(String s) {
-    return 0;
+/**
+ * Solution for the <b>Minimum Deletions to Make String Balanced</b> problem.
+ *
+ * <p>Optimizes {@code SolutionDp} by collapsing the DP table into a single variable.
+ *
+ * <ul>
+ *   <li><b>Time Complexity:</b> <code>O(n)</code>
+ *   <li><b>Space Complexity:</b> <code>O(1)</code>
+ * </ul>
+ */
+class Solution {
+  int minimumDeletions(String s) {
+    int bCount = s.charAt(0) == 'b' ? 1 : 0;
+    int minDel = 0;
+    for (int i = 1; i < s.length(); i++) {
+      if (s.charAt(i) == 'b') {
+        bCount++;
+      } else {
+        minDel = Math.min(minDel + 1, bCount);
+      }
+    }
+    return minDel;
   }
 }
