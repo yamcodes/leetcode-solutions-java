@@ -11,6 +11,12 @@ package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
  * </ul>
  */
 class Solution {
+  /**
+   * Returns the minimum number of deletions to make {@code s} balanced.
+   *
+   * @param s the string of {@code 'a'} and {@code 'b'} characters
+   * @return the minimum number of deletions needed
+   */
   int minimumDeletions(String s) {
     int bCount = s.charAt(0) == 'b' ? 1 : 0;
     int minDel = 0;

@@ -11,6 +11,12 @@ package codes.yam.leetcode.mincostclimbingstairs;
  * </ul>
  */
 class Solution {
+  /**
+   * Returns the minimum cost to reach the top of the staircase.
+   *
+   * @param cost the cost of each step
+   * @return the minimum cost to reach the top
+   */
   int minCostClimbingStairs(int[] cost) {
     int a = 0;
     int b = 0;

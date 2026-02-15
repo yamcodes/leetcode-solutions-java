@@ -9,6 +9,12 @@ package codes.yam.leetcode.climbingstairs;
  * </ul>
  */
 class SolutionRecursive {
+  /**
+   * Returns the number of distinct ways to climb to the top.
+   *
+   * @param n the number of steps
+   * @return the number of distinct ways to reach step {@code n}
+   */
   int climbStairs(int n) {
     if (n == 1) return 1;
     if (n == 2) return 2;

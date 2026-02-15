@@ -9,6 +9,12 @@ package codes.yam.leetcode.climbingstairs;
  * </ul>
  */
 class SolutionDp {
+  /**
+   * Returns the number of distinct ways to climb to the top.
+   *
+   * @param n the number of steps
+   * @return the number of distinct ways to reach step {@code n}
+   */
   int climbStairs(int n) {
     if (n <= 2) return n;
     int[] dp = new int[n + 1];

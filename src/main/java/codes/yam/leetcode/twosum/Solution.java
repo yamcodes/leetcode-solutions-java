@@ -4,13 +4,20 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * <p>Solution for the <b>Two Sum</b> problem.</p>
+ * Solution for the <b>Two Sum</b> problem.
+ *
  * <ul>
- * <li><b>Time Complexity:</b> <code>O(n log n)</code></li>
- * <li><b>Space Complexity:</b> <code>O(n)</code></li>
+ *   <li><b>Time Complexity:</b> <code>O(n log n)</code>
+ *   <li><b>Space Complexity:</b> <code>O(n)</code>
  * </ul>
  */
 class Solution {
+  /**
+   * Builds a 2D array pairing each value in {@code nums} with its original index.
+   *
+   * @param nums array of integers
+   * @return a 2D array where each element is {@code [value, originalIndex]}
+   */
   int[][] buildNumsWithIndices(int[] nums) {
     int[][] res = new int[nums.length][2];
     for (int i = 0; i < nums.length; i++) {
