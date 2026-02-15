@@ -3,7 +3,7 @@ package codes.yam.leetcode.minimumdeletionstomakestringbalanced;
 /**
  * Bottom-up DP solution for the <b>Minimum Deletions to Make String Balanced</b> problem.
  *
- * <p>Flips the memoized recursion into an iterative DP table.
+ * <p>Iterative DP table tracking minimum deletions at each position.
  *
  * <ul>
  *   <li><b>Time Complexity:</b> <code>O(n)</code>
@@ -17,9 +17,18 @@ class SolutionDp {
    * @param s the string of {@code 'a'} and {@code 'b'} characters
    * @return the minimum number of deletions needed
    */
-  @SuppressWarnings("unused")
   int minimumDeletions(String s) {
-    // TODO: Implement bottom-up DP solution
-    throw new UnsupportedOperationException("Not yet implemented");
+    int n = s.length();
+    int[] dp = new int[n];
+    int bCount = s.charAt(0) == 'b' ? 1 : 0;
+    for (int i = 1; i < n; i++) {
+      if (s.charAt(i) == 'b') {
+        dp[i] = dp[i - 1];
+        bCount++;
+      } else {
+        dp[i] = Math.min(dp[i - 1] + 1, bCount);
+      }
+    }
+    return dp[n - 1];
   }
 }
