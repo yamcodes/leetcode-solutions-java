@@ -6,13 +6,13 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 
 ## Solutions
 
-| #*              | Problem                                                                                                                          | Difficulty | Time              | Space  |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|
-| [1][lc-1]       | [Two Sum](src/main/java/codes/yam/leetcode/twosum/Solution.java)                                                                 | Easy       | `O(n log n)`      | `O(n)` |
-| [9][lc-9]       | [Palindrome Number](src/main/java/codes/yam/leetcode/palindromenumber/Solution.java)                                             | Easy       | `O(log10(n) / 2)` | `O(1)` |
-| [70][lc-70]     | [Climbing Stairs](src/main/java/codes/yam/leetcode/climbingstairs/Solution.java)                                                 | Easy       | `O(n)`            | `O(1)` |
-| [746][lc-746]   | [Min Cost Climbing Stairs](src/main/java/codes/yam/leetcode/mincostclimbingstairs/Solution.java)                                 | Easy       | `O(n)`            | `O(1)` |
-| [1653][lc-1653] | [Minimum Deletions to Make String Balanced](src/main/java/codes/yam/leetcode/minimumdeletionstomakestringbalanced/Solution.java) | Medium     | `O(n)`            | `O(1)` |
+| #*              | Problem                                                                                                                          | Difficulty | Time              | Space  | [Blind 75][blind-75] |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------|------------|-------------------|--------|----------------------|
+| [1][lc-1]       | [Two Sum](src/main/java/codes/yam/leetcode/twosum/Solution.java)                                                                 | Easy       | `O(n log n)`      | `O(n)` | Yes                  |
+| [9][lc-9]       | [Palindrome Number](src/main/java/codes/yam/leetcode/palindromenumber/Solution.java)                                             | Easy       | `O(log10(n) / 2)` | `O(1)` | No                   |
+| [70][lc-70]     | [Climbing Stairs](src/main/java/codes/yam/leetcode/climbingstairs/Solution.java)                                                 | Easy       | `O(n)`            | `O(1)` | Yes                  |
+| [746][lc-746]   | [Min Cost Climbing Stairs](src/main/java/codes/yam/leetcode/mincostclimbingstairs/Solution.java)                                 | Easy       | `O(n)`            | `O(1)` | No                   |
+| [1653][lc-1653] | [Minimum Deletions to Make String Balanced](src/main/java/codes/yam/leetcode/minimumdeletionstomakestringbalanced/Solution.java) | Medium     | `O(n)`            | `O(1)` | No                   |
 
 <sup>*Problem numbers link to LeetCode; problem names link to solution source.</sup>
 
@@ -25,6 +25,8 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 [lc-746]: https://leetcode.com/problems/min-cost-climbing-stairs/
 
 [lc-1653]: https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/
+
+[blind-75]: https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-75-LeetCode-Questions-to-Save-Your-Time-OaM1orEU
 
 ## Project Structure
 
