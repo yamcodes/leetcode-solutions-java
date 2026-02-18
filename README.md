@@ -11,7 +11,7 @@ My LeetCode solutions in Java, focused on clean code and optimal algorithms.
 | [1][lc-1]       | [Two Sum](src/main/java/codes/yam/leetcode/twosum/Solution.java)                                                                 | Easy       | `O(n log n)`      | `O(n)` | Yes                  |
 | [9][lc-9]       | [Palindrome Number](src/main/java/codes/yam/leetcode/palindromenumber/Solution.java)                                             | Easy       | `O(log10(n) / 2)` | `O(1)` | No                   |
 | [70][lc-70]     | [Climbing Stairs](src/main/java/codes/yam/leetcode/climbingstairs/Solution.java)                                                 | Easy       | `O(n)`            | `O(1)` | Yes                  |
-| [322][lc-322]   | [Coin Change](src/main/java/codes/yam/leetcode/coinchange/Solution.java)                                                         | Medium     | TBD               | TBD    | Yes                  |
+| [322][lc-322]   | [Coin Change](src/main/java/codes/yam/leetcode/coinchange/SolutionDp.java)                                                       | Medium     | TBD               | TBD    | Yes                  |
 | [746][lc-746]   | [Min Cost Climbing Stairs](src/main/java/codes/yam/leetcode/mincostclimbingstairs/Solution.java)                                 | Easy       | `O(n)`            | `O(1)` | No                   |
 | [1653][lc-1653] | [Minimum Deletions to Make String Balanced](src/main/java/codes/yam/leetcode/minimumdeletionstomakestringbalanced/Solution.java) | Medium     | `O(n)`            | `O(1)` | No                   |
 
