@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class SolutionDpTest {
+class SolutionTest {
   @ParameterizedTest
   @MethodSource("codes.yam.leetcode.coinchange.TestCases#cases")
   void coinChange(int[] coins, int amount, int expected) {
-    assertEquals(expected, new SolutionDp().coinChange(coins, amount));
+    assertEquals(expected, new Solution().coinChange(coins, amount));
   }
 }

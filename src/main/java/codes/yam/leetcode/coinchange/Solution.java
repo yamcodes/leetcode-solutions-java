@@ -2,7 +2,7 @@ package codes.yam.leetcode.coinchange;
 
 import java.util.Arrays;
 
-class SolutionDp {
+class Solution {
   int coinChange(int[] coins, int amount) {
     int[] dp = new int[amount + 1];
     Arrays.fill(dp, 1, amount + 1, amount + 1);

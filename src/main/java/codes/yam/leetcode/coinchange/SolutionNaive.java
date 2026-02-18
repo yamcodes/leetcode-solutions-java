@@ -1,6 +1,6 @@
 package codes.yam.leetcode.coinchange;
 
-class SolutionDpNaive {
+class SolutionNaive {
   int coinChange(int[] coins, int amount) {
     if (amount == 0) return 0;
     int[] dp = new int[amount + 1];
