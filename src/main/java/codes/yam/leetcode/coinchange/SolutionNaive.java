@@ -1,0 +1,37 @@
+package codes.yam.leetcode.coinchange;
+
+/**
+ * Solution for the <b>Coin Change</b> problem.
+ *
+ * <p>Naive bottom-up DP using {@code -1} as the sentinel for unreachable states. See {@link
+ * Solution} for the simplified version using {@code amount + 1} as infinity.
+ *
+ * <ul>
+ *   <li><b>Time Complexity:</b> <code>O(amount * n)</code> where {@code n} is {@code coins.length}
+ *   <li><b>Space Complexity:</b> <code>O(amount)</code>
+ * </ul>
+ */
+class SolutionNaive {
+  int coinChange(int[] coins, int amount) {
+    if (amount == 0) return 0;
+    int[] dp = new int[amount + 1];
+    for (int a = 1; a <= amount; a++) {
+      boolean useMin = true;
+      int min = Integer.MAX_VALUE;
+      for (int c : coins) {
+        if (c > a) continue;
+        if (c == a) {
+          dp[a] = 1;
+          useMin = false;
+          continue;
+        }
+        if (dp[a - c] == -1) continue;
+        min = Math.min(min, 1 + dp[a - c]);
+      }
+      if (useMin) {
+        dp[a] = min == Integer.MAX_VALUE ? -1 : min;
+      }
+    }
+    return dp[amount];
+  }
+}
