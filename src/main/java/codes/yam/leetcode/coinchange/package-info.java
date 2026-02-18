@@ -1,8 +1,9 @@
 /**
- * <p>Solutions for the "Coin Change" problem on LeetCode.</p>
+ * Solutions for the "Coin Change" problem on LeetCode.
+ *
  * <ul>
- * <li><b>Slug:</b> <code>coin-change</code></li>
- * <li><b>Difficulty:</b> Medium</li>
+ *   <li><b>Slug:</b> <code>coin-change</code>
+ *   <li><b>Difficulty:</b> Medium
  * </ul>
  *
  * @see <a href="https://leetcode.com/problems/coin-change/">Problem Link</a>
